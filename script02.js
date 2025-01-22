@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const url = `https://jumat01.onrender.com/noc/${userId}`;
   
       try {
-        alert(`Please wait while checking for Sabeel number: ${userId}`);
+        // alert(`Please wait while checking for Sabeel number: ${userId}`);
         const response = await fetch(url);
   
         if (response.status === 404) {
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         oldSabeelInput.value = userData.c[4].v;
         newSabeelInput.value = userData.c[5].v;
   
-        alert("Name found. Please select date and time.");
+        // alert("Name found. Please select date and time.");
         dateInput.disabled = false;
   
         // document.querySelectorAll('input[name="timeSlot"][type="radio"]').forEach(radio => radio.disabled = false);
@@ -235,7 +235,7 @@ async function postdata(formdata) {
       }
   
       const data = await response.json();
-      alert(data.message);  //data saved successfully.
+      // alert(data.message);  //data saved successfully.
       alert("Name: " + formdata.name + " Date: "+ formdata.date + "  Time: "+ formdata.time);
     //   location.reload();  
     } catch (error) {
