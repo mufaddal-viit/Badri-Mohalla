@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    alert("WELCOME!! , Enter your Sabeel Number");
+    // alert("WELCOME!! , Enter your Sabeel Number");
   
     // DOM Elements
     const userIdInput = document.getElementById("userId");
