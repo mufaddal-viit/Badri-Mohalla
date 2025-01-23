@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //   }
     // }
     async function checkSlots(selectedDate) {
-      const url = `http://localhost:3000/slots/${selectedDate}`;
+      const url = `https://jumat01.onrender.com/slots/${selectedDate}`;
     
       try {
         const response = await fetch(url);
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Function to post data to DB
 async function postdata(formdata) {
-    const url = "http://localhost:3000/send";
+    const url = "https://jumat01.onrender.com/send";
   
     try {
       const response = await fetch(url, {
