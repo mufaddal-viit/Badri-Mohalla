@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const response = await fetch(url);
         const slotData = await response.json();
-    
+        console.log(slotData);
         let isAnySlotAvailable = false;
         
     
