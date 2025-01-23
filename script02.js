@@ -236,7 +236,11 @@ async function postdata(formdata) {
   
       const data = await response.json();
       // alert(data.message);  //data saved successfully.
-      alert("Name: " + formdata.name + " Date: "+ formdata.date + "  Time: "+ formdata.time);
+      // alert("Name: " + formdata.name + " Date: "+ formdata.date + "  Time: "+ formdata.time);
+        alert("Appointment Booked Successfully\n" + 
+        "NAME: " + formdata.name.toUpperCase() +"\n"+ 
+        " Date: " + formdata.date.toUpperCase() + "\n"+
+        " Time: " + formdata.time.toUpperCase());
     //   location.reload();  
     } catch (error) {
       console.error("Error:", error);
