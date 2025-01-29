@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to fetch data from Google Sheets
   async function fetchData(userId) {
-    const url = `http://localhost:3000/noc/${userId}`;
+    const url = `https://badrimohalla.onrender.com/noc/${userId}`;
 
     try {
       // alert(`Please wait while checking for Sabeel number: ${userId}`);
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /*
       // Function to check slot availability
       async function checkSlots(selectedDate) {
-        const url = `http://localhost:3000/slots/${selectedDate}`;
+        const url = `https://badrimohalla.onrender.com/slots/${selectedDate}`;
         
         try {
           const response = await fetch(url);
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
   */
 
   async function checkSlots(selectedDate) {
-    const url = `http://localhost:3000/slots/${selectedDate}`;
+    const url = `https://badrimohalla.onrender.com/slots/${selectedDate}`;
 
     try {
       const response = await fetch(url);
@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to post data to DB
   async function postdata(formdata) {
-    const url = "http://localhost:3000/send";
+    const url = "https://badrimohalla.onrender.com/send";
 
     try {
       const response = await fetch(url, {
@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function getUser(userid) {
-    const url = `http://localhost:3000/user/${userid}`;
+    const url = `https://badrimohalla.onrender.com/user/${userid}`;
 
     try {
       const response = await fetch(url);
